@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    background: #fff8f0;
+
+    padding: 30px;
+
+}
+
+
+.container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+
+h1 {
+
+    text-align: center;
+
+    color: #333;
+
+    margin-bottom: 10px;
+
+}
+
+
+.subtitle {
+
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 25px;
+
+}
+
+
+.search-box {
+
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.search-box input {
+
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+}
+
+
+.search-box button {
+
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ff7043;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+.search-box button:hover {
+
+    background: #e85d32;
+
+}
+
+
+#recipes {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+
+}
+
+
+.recipe-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.recipe-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+
+.recipe-content {
+
+    padding: 18px;
+
+}
+
+
+.recipe-content h2 {
+
+    color: #333;
+
+    margin-bottom: 10px;
+
+}
+
+
+.recipe-content p {
+
+    color: #666;
+
+    margin-bottom: 8px;
+
+    line-height: 1.5;
+
+}
+
+
+.recipe-content a {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 9px 14px;
+
+    background: #ff7043;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+}
+
+
+.recipe-content a:hover {
+
+    background: #e85d32;
+
+}
+
+
+.loading {
+
+    text-align: center;
+
+    font-size: 18px;
+
+    color: #555;
+
+}
+
+
+.error {
+
+    text-align: center;
+
+    color: red;
+
+    font-size: 17px;
+
+}
